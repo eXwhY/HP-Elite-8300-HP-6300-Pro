@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SSDT-HP.aml">
+      location = "group:../../../../Desktop/SSDT-HP.aml">
    </FileRef>
    <FileRef
       location = "self:">
