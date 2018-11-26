@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HP-6300-Pro.xcodeproj">
+      location = "group:SSDT-HP.aml">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
