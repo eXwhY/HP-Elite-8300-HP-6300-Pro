@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		DF51F9D521A1B34800CF135B /* SSDT-HP.aml */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SSDT-HP.aml"; sourceTree = "<group>"; };
 		DF51F9D621A1B34800CF135B /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		DF51F9D721A1B34800CF135B /* hotpatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hotpatch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -18,7 +17,6 @@
 			children = (
 				DF51F9D721A1B34800CF135B /* hotpatch */,
 				DF51F9D621A1B34800CF135B /* config.plist */,
-				DF51F9D521A1B34800CF135B /* SSDT-HP.aml */,
 			);
 			sourceTree = "<group>";
 		};

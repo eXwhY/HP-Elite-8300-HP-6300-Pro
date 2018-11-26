@@ -15,7 +15,7 @@ DefinitionBlock("", "SSDT", 2, "HP", "_LPC", 0)
         Name(LPDL, Package()
         {
             // list of 7-series LPC device-ids not natively supported (partial list)
-            0x1e49, 0x1e47, 0,
+            0x1e49, 0x1e48, 0x1e47, 0,
             Package()
             {
                 "device-id", Buffer() { 0x42, 0x1e, 0, 0 },
