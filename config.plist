@@ -24,6 +24,8 @@
 				<true/>
 				<key>FixTMR</key>
 				<true/>
+				<key>AddMCHC</key>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -46,16 +48,6 @@
 					<data>X0RTTQ==</data>
 					<key>Replace</key>
 					<data>WERTTQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SF9FQw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -109,39 +101,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HID(ABCDEFGH to PNP0C15)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>QUJDREVGR0g=</data>
-					<key>Replace</key>
-					<data>UE5QMEMxNQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MUT0(0x0FFF to 0xFFFF)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>TVVUMP8P</data>
-					<key>Replace</key>
-					<data>TVVUMP//</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1BUUwE=</data>
-					<key>Replace</key>
-					<data>WlBUUwE=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(XSEL,0,S) to XSEZ, pair with SSDT-XSEL.aml</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>WFNFTAg=</data>
 					<key>Replace</key>
@@ -151,7 +113,7 @@
 					<key>Comment</key>
 					<string>change Method(ESEL,0,S) to ESEZ, pair with SSDT-ESEL.aml</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>RVNFTAg=</data>
 					<key>Replace</key>
@@ -190,7 +152,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>-uia_exclude_xhc dart=0</string>
+		<string>dart=0</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -222,8 +184,6 @@
 			<dict>
 				<key>#Comment</key>
 				<string>Realtek ALC221 Audio Configuration</string>
-				<key>PinConfigurations</key>
-				<data>QEArADABEJAQMIsAYJCrAeAAVig=</data>
 				<key>codec-id</key>
 				<data>IQLsEA==</data>
 				<key>device-id</key>
@@ -314,9 +274,7 @@
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
+		<array/>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
@@ -364,6 +322,8 @@
 	<dict>
 		<key>ProductName</key>
 		<string>iMac13,1</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>

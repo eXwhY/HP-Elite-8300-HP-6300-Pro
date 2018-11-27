@@ -1,9 +1,9 @@
 // CodecCommander configuration for ALC221 to fix various issue
-// Configured from Codec_Dump and to be used on HP Compaq Elite 8300 / HP Compaq 6300
+// Configured from Codec_Dump and to be used on HP Compaq Elite 8300 / HP Compaq 6300 Pro
 // Credits "Sniki"
 
 #ifndef NO_DEFINITIONBLOCK
-DefinitionBlock ("", "SSDT", 1, "Sniki", "_ALC221", 0)
+DefinitionBlock ("", "SSDT", 1, "HP", "_ALC221", 0)
 {
 #endif
     External(_SB.PCI0.HDEF, DeviceObj)
