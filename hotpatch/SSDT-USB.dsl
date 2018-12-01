@@ -1,4 +1,4 @@
-// USB Port Injector for HP Elite 8300 SFF
+// USB Port Injector for HP Elite 8300 MT/SFF/USDT & HP 6300 PRO/SFF
 
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock ("", "SSDT", 2, "HP", "_USB", 0)
@@ -10,6 +10,19 @@ DefinitionBlock ("", "SSDT", 2, "HP", "_USB", 0)
 
         Name(RMCF, Package()
         {
+            "HUB1", Package()
+            {
+                "port-count", Buffer() { 8, 0, 0, 0 },
+                "ports", Package()
+                {
+                    "HP16", Package() // Bluetooth
+                    {
+                        //"UsbConnector", 0,
+                        "portType", 2,
+                        "port", Buffer() { 6, 0, 0, 0 },
+                    },
+                },
+            },
             "HUB2", Package()
             {
                 "port-count", Buffer() { 6, 0, 0, 0 },
@@ -50,6 +63,18 @@ DefinitionBlock ("", "SSDT", 2, "HP", "_USB", 0)
                         //"UsbConnector", 0,
                         "portType", 0,
                         "port", Buffer() { 6, 0, 0, 0 },
+                    },
+                },
+            },
+            "EH01", Package()
+            {
+                "port-count", Buffer() { 8, 0, 0, 0 },
+                "ports", Package()
+                {
+                    "PR11", Package()
+                    {
+                        "UsbConnector", 255,
+                        "port", Buffer() { 1, 0, 0, 0 },
                     },
                 },
             },

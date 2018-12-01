@@ -6,7 +6,6 @@ DefinitionBlock("", "SSDT", 2, "HP", "_HP", 0)
     #include "SSDT-XOSI.dsl"
     #include "SSDT-XSEL.dsl"
     #include "SSDT-ESEL.dsl"
-    #include "SSDT-DEH01.dsl"
     #include "SSDT-USB.dsl"
     #include "SSDT-IMEI.dsl"
     #include "SSDT-LPC.dsl"
