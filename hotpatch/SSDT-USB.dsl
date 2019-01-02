@@ -24,7 +24,7 @@ DefinitionBlock ("", "SSDT", 2, "HP", "_USB", 0)
                     "HP18", Package() // Bluetooth #2
                     {
                         //"UsbConnector", 0,
-                        "portType", 0,
+                        "portType", 2,
                         "port", Buffer() { 8, 0, 0, 0 },
                     },
                 },
