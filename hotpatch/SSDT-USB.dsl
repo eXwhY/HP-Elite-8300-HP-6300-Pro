@@ -15,7 +15,7 @@ DefinitionBlock ("", "SSDT", 2, "HP", "_USB", 0)
                 "port-count", Buffer() { 8, 0, 0, 0 },
                 "ports", Package()
                 {
-                    "HP16", Package() // Bluetooth
+                    "HP16", Package() // Bluetooth #1
                     {
                         //"UsbConnector", 0,
                         "portType", 2,
